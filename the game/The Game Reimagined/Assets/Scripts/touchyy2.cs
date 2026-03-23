@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class touchyy : MonoBehaviour
+public class touchyy2 : MonoBehaviour
 {
     public Rigidbody rb;
-    public float speed = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,9 +16,8 @@ public class touchyy : MonoBehaviour
     {
         
     }
-
     private void OnTriggerEnter(Collider other)
     {
-        rb.velocity = new Vector3(0f, speed, 0);
+        rb.velocity = new Vector3(0f, 0f, 0f);
     }
 }
