@@ -11,53 +11,49 @@ public class movement : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W) & Input.GetKey(KeyCode.D))
         {
-            if (Input.GetKey(KeyCode.A))
-            {
-                rb.linearVelocity = new Vector3(-10f, 0, 0f); // move forward
-            }
-            if (Input.GetKey(KeyCode.D))
-            {
-                rb.linearVelocity = new Vector3(10f, 0, 0f); // move forward
-            }
-            rb.linearVelocity = new Vector3(0, 0, 10f); // move forward
+            rb.linearVelocity = new Vector3(10f, 0, 10f); // move 
         }
-        if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey(KeyCode.W) & Input.GetKey(KeyCode.A))
         {
-            if (Input.GetKey(KeyCode.D))
-            {
-                rb.linearVelocity = new Vector3(10f, 0, 0f); // move forward
-            }
-            if (Input.GetKey(KeyCode.A))
-            {
-                rb.linearVelocity = new Vector3(-10f, 0, 0f); // move forward
-            }
-            rb.linearVelocity = new Vector3(0, 0, -10f); // move forward
+            rb.linearVelocity = new Vector3(-10f, 0, 10f); // move 
         }
-        if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey(KeyCode.W))
         {
-            rb.linearVelocity = new Vector3(-10f, 0, 0f); // move forward
+            rb.linearVelocity = new Vector3(0f, 0, 10f); // move 
         }
-        if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.S) & Input.GetKey(KeyCode.D))
         {
-            rb.linearVelocity = new Vector3(10f, 0, 0f); // move forward
+            rb.linearVelocity = new Vector3(10f, 0, -10f); // move 
         }
-        if (Input.GetKeyUp(KeyCode.A))
+        else if (Input.GetKey(KeyCode.W) & Input.GetKey(KeyCode.A))
         {
-            rb.linearVelocity = new Vector3(0f, 0, 0f); // move forward
+            rb.linearVelocity = new Vector3(-10f, 0, 10f); // move 
         }
-        if (Input.GetKeyUp(KeyCode.D))
+        else if (Input.GetKey(KeyCode.S))
         {
-            rb.linearVelocity = new Vector3(0f, 0, 0f); // move forward
+            rb.linearVelocity = new Vector3(0f, 0, -10f); // move 
         }
-        if (Input.GetKeyUp(KeyCode.W))
+        else if (Input.GetKey(KeyCode.D))
         {
-            rb.linearVelocity = new Vector3(0f, 0, 0f); // move forward
+            rb.linearVelocity = new Vector3(10f, 0, 0f); // move 
         }
-        if (Input.GetKeyUp(KeyCode.S))
+        else if (Input.GetKey(KeyCode.A))
         {
-            rb.linearVelocity = new Vector3(0f, 0, 0f); // move forward
+            rb.linearVelocity = new Vector3(-10f, 0, 0f); // move 
+        }
+        else if (Input.GetKeyUp(KeyCode.W) & Input.GetKey(KeyCode.A))
+        {
+            rb.linearVelocity = new Vector3(-10f, 0, 0f); // move 
+        }
+        else if (Input.GetKeyUp(KeyCode.W) & Input.GetKey(KeyCode.D))
+        {
+            rb.linearVelocity = new Vector3(10f, 0, 0f); // move 
+        }
+        else
+        {
+            rb.linearVelocity = new Vector3(0f, 0, 0f); // move 
         }
 
 
