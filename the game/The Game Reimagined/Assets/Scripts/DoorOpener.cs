@@ -6,6 +6,7 @@ public class DoorOpener : MonoBehaviour
 {
     public GameObject OpenDoor;
     public GameObject ClosedDoor;
+    public GameObject Text;
     public bool InRadius;
     // Start is called before the first frame update
     void Start()
@@ -29,10 +30,19 @@ public class DoorOpener : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         InRadius = true;
+        if(OpenDoor.activeSelf == false)
+        {
+            Text.SetActive(true);
+        }
+        else
+        {
+            Text.SetActive(false);
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
         InRadius = false;
+        Text.SetActive(false);
     }
 }
