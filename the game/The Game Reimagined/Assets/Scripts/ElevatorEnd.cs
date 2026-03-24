@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class touchyy2 : MonoBehaviour
+public class ElevatorEnd : MonoBehaviour
 {
     public Rigidbody rb;
     // Start is called before the first frame update

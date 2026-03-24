@@ -42,7 +42,6 @@
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "mintegral-adapter.version",
                 "value": "{\"m_Value\":\"\"}"
-<<<<<<< HEAD
             },
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
@@ -73,8 +72,6 @@
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "mediation.build.settings.force-dependency-update",
                 "value": "{\"m_Value\":false}"
-=======
->>>>>>> 6c9f0161a3da72c99e3a07c74c1626b235e38d6f
             }
         ]
     }

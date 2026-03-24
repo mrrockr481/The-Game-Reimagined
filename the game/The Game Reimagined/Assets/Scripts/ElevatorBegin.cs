@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class touchyy : MonoBehaviour
+public class ElevatorBegin : MonoBehaviour
 {
     public Rigidbody rb;
-    public float speed = 5;
+    public float speed = 20;
     // Start is called before the first frame update
     void Start()
     {
